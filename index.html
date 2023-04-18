@@ -24,8 +24,8 @@
             </div>
 
             <div class="encryption__content">
-                    <textarea class="encryption__input" placeholder="Insert text here"></textarea>
-                    <textarea class="encryption__output" placeholder="Result"></textarea>
+                <textarea class="encryption__input" placeholder="Insert text here"></textarea>
+                <textarea class="encryption__output" placeholder="Result"></textarea>
             </div>
 
             <div class="encryption__footer">
@@ -42,13 +42,13 @@
             </div>
         </section>
 
-        <section class="history">
+        <section class="history history--exist">
             <div class="history__container">
                 <div class="history__header">
-                    <div class="history__icon">
-                        <img src="images/clipboard.png" alt="clipboard">
+                    <div class="history__main-icon">
+                        <img class="history__image" src="images/clipboard.png" alt="clipboard">
                     </div>
-                    <div class="history__text">
+                    <div class="history__info">
                         <h5 class="history__title">Results History</h5>
                         <p class="history__description">Click on a message to copy it to the clipboard</p>
                     </div>
@@ -59,24 +59,23 @@
                             <p class="history__message">Lorem ipsum dolor sit amet consectetur adipiscing
                                 elitasdadasasdasdsadasdasdas...</p>
                         </div>
-                        <div class="history__icon">
-                            <img class="history__icon-lock" src="images/lock.svg" alt="lock icon">
-                        </div>
+                        <img class="history__icon-lock" src="images/lock.svg" alt="lock icon">
+
                     </section>
                     <section class="history__item">
                         <div class="history__text">
                             <p class="history__message">Lorem ipsum dolor sit amet consectetur adipiscing
                                 elitasdadasasdasdsadasdasdas...</p>
                         </div>
-                        <div class="history__icon">
-                            <img class="history__icon-unlock" src="images/unlock.svg" alt="unlock icon">
-                        </div>
+                        <img class="history__icon-unlock" src="images/unlock.svg" alt="unlock icon">
                     </section>
+            
+                    
                 </div>
                 <div class="history__filter">
                     <h2 class="history__filter-title">Filter: </h2>
                     <label class="history__filter-label">
-                        <input class="history__filter-radio" type="radio" name="option" value="all">
+                        <input class="history__filter-radio" type="radio" name="option" value="all" checked>
                         All
                     </label>
                     <label class="history__filter-label">
@@ -96,14 +95,17 @@
     </main>
 
     <footer class="footer">
+
+        <div class="footer__name">
+            <b>Developed by:</b> <span>Kevin Sánchez Rogel</span>
+        </div>
+
         <div class="footer__social">
+            <b>Social networks:</b>
             <a href="https://www.github.com/kesanc" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
             <a href="https://www.twitter.com/damrog99" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/kesanc/ target=" _blank" rel="noopener"><i
                     class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="footer__name">
-            <p>Kevin Sánchez Rogel</p>
         </div>
     </footer>
 
