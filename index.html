@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/third-party/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="https://kit.fontawesome.com/2da2cc0c31.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
@@ -24,25 +25,27 @@
             </div>
 
             <div class="encryption__content">
-                <textarea class="encryption__input" placeholder="Insert text here"></textarea>
-                <textarea class="encryption__output" placeholder="Result"></textarea>
+                <textarea id="encryption__input" class="encryption__input" placeholder="Insert text here"></textarea>
+                <textarea id="encryption__output" class="encryption__output" placeholder="Result"></textarea>
             </div>
 
             <div class="encryption__footer">
                 <div class="encryption__warning">
                     <img class="encryption__warning-icon" src="images/exclamation-circle-fill.svg"
                         alt="exclamation-circle">
-                    <span class="encryption__warning-text">Only lowercase letters and no accents</span>
+                    <span class="encryption__warning-text">Only letters without accents</span>
                 </div>
 
                 <div class="encryption__buttons">
-                    <button class="encryption__button encryption__button--encrypt">Encrypt</button>
-                    <button class="encryption__button encryption__button--decrypt">Decrypt</button>
+                    <button id="encryption__button"
+                        class="encryption__button encryption__button--encrypt">Encrypt</button>
+                    <button id="decryption__button"
+                        class="encryption__button encryption__button--decrypt">Decrypt</button>
                 </div>
             </div>
         </section>
 
-        <section class="history history--exist">
+        <section class="history"> <!-- history--exist -->
             <div class="history__container">
                 <div class="history__header">
                     <div class="history__main-icon">
@@ -69,8 +72,8 @@
                         </div>
                         <img class="history__icon-unlock" src="images/unlock.svg" alt="unlock icon">
                     </section>
-            
-                    
+
+
                 </div>
                 <div class="history__filter">
                     <h2 class="history__filter-title">Filter: </h2>
