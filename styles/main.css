@@ -11,6 +11,13 @@ body {
   padding: 1rem;
 }
 
+.show {
+  display: initial;
+}
+
+.hide {
+  display: none !important;
+}
 
 /* ---- ----- -----    HEADER     ----- ----- ---- */
 .header {
@@ -112,7 +119,6 @@ body {
 /* ---- ----- -----    HISTORY SECTION     ----- ----- ---- */
 .history {
   width: 30%;
-
   position: relative;
 }
 
@@ -198,31 +204,39 @@ body {
 
 .history--exist .history__content {
   display: unset;
-}
-.history--exist .history__filter{
-  display: unset;
-}
-
-.history--exist .history__content {
-  min-height: 24rem;
+  min-height: 22rem;
+  max-height: 22rem;
+  overflow-y: auto;
+  width: 100%;
 }
 
 .history--exist .history__item {
   padding: 0.5rem 0.8rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 0.9rem;
   color: var(--text-color);
   border-bottom: 1px solid #FFF5F5;
   cursor: pointer;
+  max-height: 70px;
+  min-height: 45px;
+  overflow-y: auto;
+
 }
-.history--exist .history__item:hover{
-  transition:  0.5s all;
+
+.history--exist .history__text {
+  max-width: 259px;
+
+}
+
+.history--exist .history__item:hover {
+  transition: 0.5s all;
   background: #61616315;
- 
+
 }
 
 .history--exist .history__filter {
+  display: unset;
   color: var(--text-color);
   padding: 0 0.2rem;
 }
@@ -248,7 +262,7 @@ body {
 .history--exist .history__filter-radio:checked {
   background-color: #fff;
 
-  border: 5px solid ;
+  border: 5px solid;
   border-color: #44FFD2;
 }
 
