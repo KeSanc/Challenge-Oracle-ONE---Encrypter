@@ -57,8 +57,6 @@ Por ejemplo:
 `gato` => `gaitober`
 `gaitober` => `gato`
 
-La aplicación debe tener campos para la inserción del texto que se desea encriptar o desencriptar, y el usuario debe poder elegir entre ambas opciones. El resultado de la encriptación o desencriptación se mostrará en la pantalla.
-
 ## Llaves de encriptación
 
 | Letra | Encriptación |
